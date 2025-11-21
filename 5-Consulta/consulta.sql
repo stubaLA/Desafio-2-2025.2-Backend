@@ -1,12 +1,12 @@
 SELECT v.*
 FROM veiculo v
 JOIN proprietario p ON v.cpf_proprietario = p.cpf
-WHERE p.cpf = '12345678901';  -- CPF informado pelo usuário
+WHERE p.cpf = '12345678901'; 
 
 
 SELECT *
 FROM proprietario
-WHERE nome LIKE '%Maria%';  -- Parte do nome informada pelo usuário
+WHERE nome LIKE '%Maria%'; 
 
 
 SELECT i.id_infracao, i.data_hora, i.velocidade_aferida,
